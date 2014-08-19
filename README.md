@@ -5,11 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/AZEncodeURIComponent.svg?style=flat)](http://cocoadocs.org/docsets/AZEncodeURIComponent)
 [![Platform](https://img.shields.io/cocoapods/p/AZEncodeURIComponent.svg?style=flat)](http://cocoadocs.org/docsets/AZEncodeURIComponent)
 
-## Usage
+A Port of [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent "encodeURIComponent()").
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+`AZEncodeURIComponent` escapes all characters except the following: `alphabetic, decimal digits, - _ . ! ~ * ' ( )`
 
 ## Installation
 
@@ -17,6 +15,14 @@ AZEncodeURIComponent is available through [CocoaPods](http://cocoapods.org). To 
 it, simply add the following line to your Podfile:
 
     pod "AZEncodeURIComponent"
+
+## Usage
+
+use `AZEncodeURIComponent` C Function.
+
+```objc
+AZEncodeURIComponent(@"日本語"); // -> "%E6%97%A5%E6%9C%AC%E8%AA%9E"
+```
 
 ## Author
 
