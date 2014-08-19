@@ -1,0 +1,10 @@
+target 'AZEncodeURIComponent', :exclusive => true do
+  pod "AZEncodeURIComponent", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "AZEncodeURIComponent", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
