@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "AZEncodeURIComponent"
-  s.version     = "0.1.0"
+  s.version     = "0.1.1"
   s.summary     = "A Port of encodeURIComponent()."
   s.description = <<-DESC
   AZEncodeURIComponent escapes all characters except the following: `alphabetic, decimal digits, - _ . ! ~ * ' ( )`
