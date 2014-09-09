@@ -1,5 +1,5 @@
 PODS:
-  - AZEncodeURIComponent (0.1.0)
+  - AZEncodeURIComponent (1.0.0)
   - Expecta (0.3.1)
   - Specta (0.2.1)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AZEncodeURIComponent: 6ca22a5df041688dd7eb881a47db865ae17f97fd
+  AZEncodeURIComponent: 76714508f5c6e623d031486662e89ecc13d2ff2f
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
 
