@@ -9,7 +9,8 @@
 #import "AZEncodeURIComponent.h"
 
 NSString *__AZEncodeURIComponent(NSString *string) {
-    return (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(
+    // http://stackoverflow.com/questions/17967515/cfstringref-to-nsstring-arc-leaking-why
+    return (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(
         NULL,
         (__bridge CFStringRef)string,
         NULL,
