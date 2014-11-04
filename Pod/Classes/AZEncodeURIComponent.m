@@ -17,3 +17,11 @@ NSString *__AZEncodeURIComponent(NSString *string) {
         CFSTR("!*'();:@&=+$,/?%#[]"),
         CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
 }
+
+NSString *__AZDecodeURIComponent(NSString *string) {
+    return (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(
+        kCFAllocatorDefault,
+        (__bridge CFStringRef)string,
+        CFSTR(""),
+        kCFStringEncodingUTF8);
+}

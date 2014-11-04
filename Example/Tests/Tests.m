@@ -20,5 +20,16 @@ SpecBegin(InitialSpecs)
                 expect(AZEncodeURIComponent(@"xxx")).equal(@"xxx");
             });
         });
-
+        describe(@"AZDecodeURIComponent", ^{
+            it(@"can encode URL", ^{
+                expect(AZDecodeURIComponent(@"%E6%97%A5%E6%9C%AC%E8%AA%9E")).equal(@"日本語");
+                expect(AZDecodeURIComponent(AZEncodeURIComponent(@"日本語"))).equal(@"日本語");
+            });
+            it(@"can encode arabia", ^{
+                expect(AZDecodeURIComponent((@"كم الساعة الآن في الدول العربية؟"))).equal(@"كم الساعة الآن في الدول العربية؟");
+            });
+            it(@"can handle ascii", ^{
+                expect(AZDecodeURIComponent(@"xxx")).equal(@"xxx");
+            });
+        });
 SpecEnd

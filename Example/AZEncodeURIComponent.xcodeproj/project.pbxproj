@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		196AA0D23E634F5895CE2AEF /* libPods-AZEncodeURIComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AZEncodeURIComponent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2338CAE95AD481F742C4E27B /* AZEncodeURIComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AZEncodeURIComponent.podspec; path = ../AZEncodeURIComponent.podspec; sourceTree = "<group>"; };
+		3BA7F3E30E7E5B3384CCE780 /* Pods-AZEncodeURIComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZEncodeURIComponent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AZEncodeURIComponent/Pods-AZEncodeURIComponent.debug.xcconfig"; sourceTree = "<group>"; };
 		4636588FF2774997A6CEB9C6 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* AZEncodeURIComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZEncodeURIComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,9 +63,10 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		74EE4C2A6180B077955B9600 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8423490543024FEFAF18FCA2 /* Pods-AZEncodeURIComponent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZEncodeURIComponent.xcconfig"; path = "Pods/Pods-AZEncodeURIComponent.xcconfig"; sourceTree = "<group>"; };
-		A0FE9B1799284F979AF62B73 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		9956A52EA0BBAD03FDF93245 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9AAA98DAE96701AC223CEC3E /* Pods-AZEncodeURIComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZEncodeURIComponent.release.xcconfig"; path = "Pods/Target Support Files/Pods-AZEncodeURIComponent/Pods-AZEncodeURIComponent.release.xcconfig"; sourceTree = "<group>"; };
 		D496F7D64D3ECBB70C7B8438 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EB0758024682AF72EF5194DE /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D07EBDBC25C9467633708E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BA7F3E30E7E5B3384CCE780 /* Pods-AZEncodeURIComponent.debug.xcconfig */,
+				9AAA98DAE96701AC223CEC3E /* Pods-AZEncodeURIComponent.release.xcconfig */,
+				EB0758024682AF72EF5194DE /* Pods-Tests.debug.xcconfig */,
+				9956A52EA0BBAD03FDF93245 /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +114,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				8423490543024FEFAF18FCA2 /* Pods-AZEncodeURIComponent.xcconfig */,
-				A0FE9B1799284F979AF62B73 /* Pods-Tests.xcconfig */,
+				4D07EBDBC25C9467633708E6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -309,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-AZEncodeURIComponent-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AZEncodeURIComponent/Pods-AZEncodeURIComponent-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A08E39D929404A4EA1E50E3A /* Check Pods Manifest.lock */ = {
@@ -339,7 +351,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -483,7 +495,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8423490543024FEFAF18FCA2 /* Pods-AZEncodeURIComponent.xcconfig */;
+			baseConfigurationReference = 3BA7F3E30E7E5B3384CCE780 /* Pods-AZEncodeURIComponent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -497,7 +509,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8423490543024FEFAF18FCA2 /* Pods-AZEncodeURIComponent.xcconfig */;
+			baseConfigurationReference = 9AAA98DAE96701AC223CEC3E /* Pods-AZEncodeURIComponent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -511,7 +523,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0FE9B1799284F979AF62B73 /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = EB0758024682AF72EF5194DE /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AZEncodeURIComponent.app/AZEncodeURIComponent";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -534,7 +546,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0FE9B1799284F979AF62B73 /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = 9956A52EA0BBAD03FDF93245 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AZEncodeURIComponent.app/AZEncodeURIComponent";
 				FRAMEWORK_SEARCH_PATHS = (
