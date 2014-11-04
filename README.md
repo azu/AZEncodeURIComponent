@@ -22,6 +22,7 @@ use `AZEncodeURIComponent` C Function.
 
 ```objc
 AZEncodeURIComponent(@"日本語"); // -> "%E6%97%A5%E6%9C%AC%E8%AA%9E"
+AZDecodeURIComponent(@"%E6%97%A5%E6%9C%AC%E8%AA%9E"); // 日本語
 ```
 
 ## Author
@@ -31,4 +32,3 @@ azu, azuciao@gmail.com
 ## License
 
 AZEncodeURIComponent is available under the MIT license. See the LICENSE file for more info.
-
